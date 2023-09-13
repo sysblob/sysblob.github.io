@@ -146,7 +146,7 @@ Extract the tar file and copy it to /etc/guacamole/lib/.
 tar -xf mysql-connector-java-8.0.26.tar.gz
 sudo cp mysql-connector-java-8.0.26/mysql-connector-java-8.0.26.jar /etc/guacamole/lib/
 ```
-Download the JDBC auth plugin for Apache Guacamole. This file can be found on [http://guacamole.apache.org/releases/](http://guacamole.apache.org/releases/) by selecting the release version and then locate the “jdbc” file.
+Download the JDBC auth plugin for Apache Guacamole. This file can be found on [https://guacamole.apache.org/releases/](https://guacamole.apache.org/releases/) by selecting the release version and then locate the “jdbc” file.
 
 ```bash
 wget https://downloads.apache.org/guacamole/1.5.2/binary/guacamole-auth-jdbc-1.5.2.tar.gz
