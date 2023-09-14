@@ -18,7 +18,7 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title:  # the main title
+title: Sysblob  # the main title
 
 tagline: 
 
@@ -29,7 +29,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://sysblob.com"
 
 github:
-  username: Sysblob # change to your github username
+  username: sysblob # change to your github username
 
 twitter:
   username: sysblob # change to your twitter username
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Sysblob
-  email: thesysblob@gmail.com # change to your email address
+  email: contactme@sysblob.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/sysblob # change to your twitter homepage

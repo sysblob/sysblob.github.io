@@ -13,7 +13,7 @@
 html[data-mode=dark] {
     --heading-color: #ae81ff;
     --label-color: #62ea00;
-    --site-title-color: #717070;
+    --site-title-color: #62ea00;
     --site-subtitle-color: #868686;
     --sidebar-muted-color: #ae81ff;
     --sidebar-active-color: #62ea00;
@@ -40,7 +40,6 @@ html[data-mode=dark] {
 #search-results a, #search-hints .post-tag, a {
     color: #62ea00;
 }
-
 
 /* Change panel hover only text color to green and border hover to purple */
 .btn:hover {
