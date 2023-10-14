@@ -9,7 +9,7 @@ pin: true
 comments: true
 ---
 
-Hello World -- and welcome to Sysblob.com, a website dedicated to homelabbing. I've been a big fan of tinkering and computers for a long time, and I've made a career of it as a Linux Administrator. However, around 4 years ago I decided to take my homelabbing game to another level. Fed up with never getting to physically touch an enterprise server, I purchased a Dell PowerEdge R730, a rack, and began an adventure of learning. Since then I've expanded to a 2nd PowerEdge server, 24 port switch and router, cloud servers, and countless other devices. My labbing interests span from multimedia to enterprise infrastructure, automation, networking, coding and development, security, AI, and so much more. I like to keep a healthy balance of real world enterprise experience with stuff that's just plain fun -- and that's what you'll find here!
+Hello World -- and welcome to Sysblob.com, a website dedicated to homelabbing. I've been a fan of tinkering and computers for a while now, and I've made a career of it as a Linux Administrator. However, around 4 years ago I decided to take my homelabbing game to another level. Fed up with never getting to physically touch an enterprise server, I purchased a Dell PowerEdge R730, a rack, and began an adventure of learning. Since then I've expanded to a 2nd PowerEdge server, 24 port switch and router, cloud servers, raspberry pis,  and countless other devices. My labbing interests span from multimedia, enterprise architecture, scripting and automation, networking, coding, security, AI, and so much more. I like to keep a healthy balance of real world enterprise experience with stuff that's just plain fun -- and that's what you'll find here!
 
 The goal of Sysblob.com is three fold:
 
