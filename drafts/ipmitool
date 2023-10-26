@@ -1,0 +1,35 @@
+# Quieting fans via IPMI
+
+#### <span style="color: rgb(185, 106, 217);">Quieting a Dell R730 and other models (Manual fan control via IPMI)</span>
+
+- [ipmitool/ipmitool: An open-source tool for controlling IPMI-enabled systems (github.com)](https://github.com/ipmitool/ipmitool)
+- IPMI tool is used to communicate to server via power shell or command line when it has IPMI communication available which is common for Dell servers.
+- To use -E parameter to store password add IPMI\_PASSWORD to environment variable for system
+
+<span style="color: rgb(185, 106, 217);">List fans a power:</span>
+
+```bash
+ipmitool -I lanplus -H 192.168.0.13 -U root -P Password sdr list full
+```
+
+<span style="color: rgb(185, 106, 217);">Turn on manual fan control:</span>
+
+```bash
+ipmitool -I lanplus -H 192.168.0.13 -U root -P Password raw 0x30 0x30 0x01 0x00
+```
+
+<span style="color: rgb(185, 106, 217);">Turn off manual fan control:</span>
+
+```bash
+ipmitool -I lanplus -H 192.168.0.13 -U root -P Password raw 0x30 0x30 0x01 0x01
+```
+
+<span style="color: rgb(185, 106, 217);">Set fan speed to 10%:</span>
+
+```bash
+ipmitool -I lanplus -H 192.168.0.13 -U root -P Password raw 0x30 0x30 0x02 0xff 0xA
+```
+
+The <span style="color: rgb(185, 106, 217);">0xA</span> above at the end of the hex code represents "10%". Here are other hex codes if you want to set the fan higher or lower replace the 0xA with the hex.
+
+<table class="align-center" id="bkmrk-%25-fan-speed-hex-50-3" style="height: 258px; width: 98.3951%;"><thead><tr><th class="align-center" style="width: 50.0007%;">% Fan speed</th><th style="width: 50.0007%;">Hex</th></tr></thead><tbody><tr><td style="width: 50.0007%;">50</td><td style="width: 50.0007%;">32</td></tr><tr><td style="width: 50.0007%;">30</td><td style="width: 50.0007%;">1E</td></tr><tr><td style="width: 50.0007%;">20</td><td style="width: 50.0007%;">14</td></tr><tr><td style="width: 50.0007%;">15</td><td style="width: 50.0007%;">F</td></tr><tr><td style="width: 50.0007%;">10</td><td style="width: 50.0007%;">A</td></tr><tr><td style="width: 50.0007%;">7</td><td style="width: 50.0007%;">7</td></tr><tr><td style="width: 50.0007%;">6</td><td style="width: 50.0007%;">6</td></tr><tr><td style="width: 50.0007%;">5</td><td style="width: 50.0007%;">5</td></tr></tbody></table>
