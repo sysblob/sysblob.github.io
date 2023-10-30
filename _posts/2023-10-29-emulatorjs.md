@@ -1,9 +1,9 @@
 ---
-title: Emulatorjs browser gaming
+title: Emulatorjs - Retro gaming in a browser
 image: emulatorjs.png
 img_path: /images/
 date: 2023-10-29
-categories: [homelab]
+categories: [homelabbing]
 tags: [docker,gaming,emulators]
 pin: false
 comments: true
@@ -13,9 +13,9 @@ Emulators have been around as long as I can remember. In short, they give you th
 
 ## What is Emulatorjs?
 
-For a little while now the most known emulator project has been RetroArch. [RetroArch](https://en.wikipedia.org/wiki/RetroArch) as an application has emulator "cores" that it downloads for you, and has an interface that reminds me of Playstation. Emulatorjs uses RetroArch behind the scenes compiled into WebAssembly. Emulatorjs for its front-end then uses javascript to serve you up a graphical gaming experience right there in your browser. 
+For a little while now the most known emulator project has been RetroArch. [RetroArch](https://en.wikipedia.org/wiki/RetroArch) as an application has emulator "cores" that it downloads for you which represent the various systems. It's fairly easy to use and has an interface that reminds me a bit of Playstation. Emulatorjs uses RetroArch behind the scenes compiled into WebAssembly. Emulatorjs for its front-end then uses javascript to serve you up a graphical gaming experience right there in your browser. 
 
-There are a couple ways to setup Emulatorjs but like most builds if I can use a docker compose file I will. Let's take a look at the compose.
+There are a couple ways to setup Emulatorjs, but like most builds if I can use a docker compose file I will. Let's take a look at the compose.
 
 ## Setup and Configuration
 
