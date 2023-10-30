@@ -9,11 +9,11 @@ pin: false
 comments: true
 ---
 
-Emulators have been around as long as I can remember. In short, they give you the ability to play old systems like NES and Sega on your home computer. These are absolutely great, but what if I told you there was a better homelabber solution where you could play all those same games but inside a convenient browser? Let's explore Emulatorjs.
+Emulators have been around as long as I can remember. In short, emulators act as virtual gaming systems which give you the ability to play old systems like NES and Sega on your home computer. Emulators are great, but what if I told you there was a better homelabber solution. One where you could play all those same games, but inside a browser? Let's explore Emulatorjs.
 
 ## What is Emulatorjs?
 
-For a little while now the most known emulator project has been RetroArch. [RetroArch](https://en.wikipedia.org/wiki/RetroArch) as an application has emulator "cores" that it downloads for you which represent the various systems. It's fairly easy to use and has an interface that reminds me a bit of Playstation. Emulatorjs uses RetroArch behind the scenes compiled into WebAssembly. Emulatorjs for its front-end then uses javascript to serve you up a graphical gaming experience right there in your browser. 
+The gold standard of application emulators is RetroArch. [RetroArch](https://en.wikipedia.org/wiki/RetroArch) has been around a while now, and uses "cores" that it downloads which represent the various gaming systems. It's easy to use and has an interface that reminds me a bit of gaming on Playstation. Emulatorjs uses RetroArch behind the scenes compiled into WebAssembly. Emulatorjs for its front-end then uses javascript to serve you up a graphical gaming experience rendered in the browser. This works both on PC and mobile phone. Although I'll state the mobile phone built in controller is horrendous. 
 
 There are a couple ways to setup Emulatorjs, but like most builds if I can use a docker compose file I will. Let's take a look at the compose.
 
@@ -42,7 +42,7 @@ services:
     restart: unless-stopped
 ```
 
-Once you have the docker compose spun up via `docker compose -d` you can visit the file management portion of Emulatorjs by going to hostname:3000.
+Once you have the docker compose spun up via `docker compose -d` you can visit the file management portion of Emulatorjs by going to `hostname:3000`.
 
 ![emulatorjs file menu](emulatorjs-files.png){: w="840" h="400" }
 
@@ -56,7 +56,7 @@ Here you can manage your ROMs, Artwork, and overall content on your Emulatorjs s
 6. Click download all available art.
 7. Click Add all ROMs to config.
 
-Your game should now be available to play. Emulatorjs uses port 80 to play games so go to host:80 and you will find your NES system and game.
+Your game should now be available to play. Emulatorjs uses port 80 to play games so go to `host:80` and you will find your NES system and game.
 
 > I've seen a bug where the first time you load a game on a new system the game doesn't load. Just exit browser and it will load 2nd time.
 {: .prompt-warning }
