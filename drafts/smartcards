@@ -1,0 +1,27 @@
+# Disabling smartcard requirement
+
+Sometimes domains have security policies in place that force a smart card to be required in order to login. This can interfere with some admin activities and sometimes it can be important to temporarily disable this requirement.
+
+1\. Login to the source machine.  
+2\. Go to RUN and type ‘REGEDIT’. Press Enter  
+3\. This will launch the Registry Editor utility  
+4\. Now go to File menu and click on ‘Connect Network Registry’, as seen in the below picture
+
+  
+![](https://4.bp.blogspot.com/-s0UxhwCTJmk/TmXdtIA_YMI/AAAAAAAABV4/m4kM8ACmarA/s1600/network-registry.jpg)
+
+5\. Type in the name of the target computer in the pop-up window and press OK
+
+  
+![](https://2.bp.blogspot.com/-rDBgpRo_DaY/TmXdxnzCvbI/AAAAAAAABV8/yt1Rlmkx5KI/s1600/network-registry-2.jpg)
+
+6\. If Target computer is not completely out of network, the Registry settings will be loaded  
+7\. Now, you can use the Registry of remote computer to diagnose and troubleshoot the issue  
+8\. Make sure that you have taken a backup of Registry settings before editing  
+9\. Follow the registry path below
+
+```bash
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system
+```
+
+10\. Change ***scforceoption*** to 0

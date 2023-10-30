@@ -1,0 +1,53 @@
+# Working with PowerShell
+
+Windows uses <span style="color: rgb(224, 62, 45);">PowerShell</span> as its primary scripting language and shell. Here are some tips and tricks on navigating it.
+
+- Download PowerShell for Windows here: [https://github.com/PowerShell/PowerShell/releases/latest](https://github.com/PowerShell/PowerShell/releases/latest)
+- Run through the installation making sure to add a PATH for PowerShell in windows. (PATH is a variable windows uses to shortcut to software locations)
+- Open PowerShell as Administrator and type the following command into the console, agreeing when prompted. This will set your execution policy to a balance that allows you to run local scripts but will deny unsigned scripts that come from the internet.
+
+```powershell
+set-executionpolicy remotesigned
+```
+
+- It’s a good idea to also setup a scripting folder that PowerShell can reference. For convenience we setup our scripts within the global folder used by **ALL** PowerShell users. Navigate here and create a folder with a name of your choice for storing your new script. <p class="callout info">**Note: PowerShell also looks for scripts in its own directory such as “C:\\Program Files\\PowerShell\\7\\Modules”**.</p>
+
+```powershell
+C:\Program Files\WindowsPowerShell\Modules\FOLDER-NAME
+```
+
+- Now, when we are ready to incorporate a script we like into PowerShell, we can place it within this directory so that it will load every time we load PowerShell. Let’s create a simple script which we can reference. Create a file in your script folder and make the file type psm1. Name this psm1 file identical to the folder it resides in.
+
+<p class="callout warning">Make sure to use an identical file name as your folder or PowerShell won’t find it. For example, if you named your folder super-cool-script make sure you name your psm1 file super-cool-script.psm1.</p>
+
+- Place the code below within the psm1 file and save it.
+
+```powershell
+function my-first-command {
+
+"We executed first function"
+
+}
+
+function my-second-command{
+
+"We executed second function"
+
+}
+```
+
+- We now have our first module which will be imported automatically upon loading PowerShell. Let’s give it a go. Open PowerShell as Administrator and execute the following command:
+
+```powershell
+Get-Module -listavailable
+```
+
+- This will list all of your available modules that were automatically imported by PowerShell. Under our directory you should see our newly created module. Notice how it lists “exported commands”. These are the commands that are used within PowerShell to call your functions within your module. **Note: The command and parameter ‘Get-Command -Module modulename’ will list all possible commands you can execute under that module.**
+- Let’s call these commands and watch their input. Type into the console the following command and press enter. Also try replacing first with second.
+
+```powershell
+my-first-command
+my-second-command
+```
+
+- You should notice it fires off the code within your function. You can include as many functions as you’d like that feel appropriate under a single module, or you can create a one-to-one function module setup. I find the best balance is to group functions under modules as categories. For example, if you have a bunch of functions that run scripts checking for network activity (ping, netstat etc.), you might throw them all under one module called company-network-checks.

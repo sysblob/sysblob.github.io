@@ -1,0 +1,39 @@
+Server racks are broken down into units called RU (Rack Units) - Most people refer to this just as U as in 6u or 18u. This is the height of the server.
+1 U is the equivalent of 1.75 inches and items in the rack typically range from 1u to 3u with servers typically being 1u or 2u.
+Server width is typically 19 inches. Most servers have an external width of 24 inches because most floor panels in server rooms are 24x24 which helps you effectively use your space.
+Server depth varies per server but 24 and 48 inch depths are common. 24 Inch depth racks are ideal for network equipment while the common depth for server racks is 29 inches and this is compatible with most Dell, HP, and IBM servers.
+
+PowerEdge R730 Mounting specifications
+Chassis Dimensions:
+
+Mounting depth: 25.5” (648 mm)
+
+Width: 17.1” (444 mm)
+
+Height: 3.4” (87.3 mm)
+
+Weight: 69.23 lb maximum
+
+Mounting Requirements:
+
+U Height: 2U
+
+Rack width: 19”
+
+Mountable depth: 25”-27”
+
+
+____________________________________________________
+
+PowerEdge R730 hardware specifications
+RAM: Up to 3TB LRDIMM/RDIMM (The PowerEdge R730 system supports DDR4 registered DIMMs (RDIMMs) and load-reduced DIMMs (LRDIMMs). Supported memory bus frequencies are 1333MT/s, 1600 MT/s, 1866 MT/s, 2133MT/s, or 2400 MT/s.)
+
+Storage: Up to 16 x 2.5” or 8 x 3.5” (Max 29TB / 64TB)
+
+CPU options: Up to two E5-2600 v4 Intel Xeon Scalable Processors (22 cores per processor)
+
+Power: Up to two AC or DC PSUs
+
+Remote management: iDRAC8 with Lifecycle Controller
+
+The PowerEdge R730 chassis is 2 rack units in height, has a depth of 26 inches and will fit in standard EIA 19 inch racks.
