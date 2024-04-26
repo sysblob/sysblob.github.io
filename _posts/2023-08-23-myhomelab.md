@@ -38,12 +38,14 @@ Normally this is the part where I would give a glimpse into some of the current 
 - 2022 Mac M1 Pro (Daily driver)
 
 
-## Infrastrcuture
+## Infrastructure
 
 - Proxmox
 - VMWare ESXi
+- Portainer
+- Jenkins
 - Opnsense
-- Semaphore (Ansible)
+- Single node k3s AWX (Ansible)
 - Foreman/Katello/Puppet
 - FreeIPA
 - 2022 Active Directory
@@ -74,6 +76,7 @@ Normally this is the part where I would give a glimpse into some of the current 
 - Organizr
 - Nextcloud
 - Homerr
+- Metube
 
 ## Diagrams
 
