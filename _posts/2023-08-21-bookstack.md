@@ -4,7 +4,7 @@ image: bookstack.png
 img_path: /images/
 date: 2023-08-21
 categories: [homelabbing]
-tags: [bookstack,documentation,self-hosted]
+tags: [bookstack]
 pin: false
 comments: true
 ---

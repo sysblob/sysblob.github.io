@@ -4,7 +4,7 @@ image: semaphore.png
 img_path: /images/
 date: 2023-09-09
 categories: [homelabbing]
-tags: [ansible,semaphore,automation]
+tags: [semaphore]
 pin: false
 comments: true
 ---

@@ -4,7 +4,7 @@ image: labclose.png
 img_path: /images/
 date: 2023-08-23
 categories: [homelabbing]
-tags: [showcase,rack,servers]
+tags: [showcase]
 pin: true
 comments: true
 ---

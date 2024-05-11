@@ -4,7 +4,7 @@ image: emulatorjs.png
 img_path: /images/
 date: 2023-10-29
 categories: [homelabbing]
-tags: [docker,gaming,emulators]
+tags: [emulatorjs]
 pin: false
 comments: true
 ---

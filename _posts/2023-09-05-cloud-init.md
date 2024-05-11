@@ -4,7 +4,7 @@ image: cloud-init-logo.png
 img_path: /images/
 date: 2023-09-05
 categories: [homelabbing]
-tags: [cloud-init,image editing,virt-edit]
+tags: [cloud-init]
 pin: false
 comments: true
 ---

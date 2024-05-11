@@ -4,7 +4,7 @@ image: guacamole.png
 img_path: /images/
 date: 2023-09-04
 categories: [homelabbing]
-tags: [guacamole,remote,ssh,rdp]
+tags: [guacamole]
 pin: false
 comments: true
 ---
